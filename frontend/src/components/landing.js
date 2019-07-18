@@ -1,7 +1,15 @@
 import React from 'react';
 import '../styles/LandingPage.scss';
-import intro from '../assets/nerd-emoji.png';
-import spiderman from '../assets/spider.png';
+import nerdemoji from '../assets/nerd-emoji.png';
+// import victory from '../assets/victory.png';
+import victory from '../assets/lu2.png';
+// import spiderman from '../assets/spider-man.png';
+import gmail from '../assets/gmail.png';
+import medium from '../assets/medium.png';
+import github from '../assets/github.png';
+import facebook from '../assets/facebook.png';
+import twitter from '../assets/twitter.png';
+import linkedin from '../assets/linkedin.png';
 const LandingPage=()=>{
       return (
             <div id='background'>
@@ -9,12 +17,29 @@ const LandingPage=()=>{
                   <div id='sun'></div>
                   <div id='navbar'>
                         <div id='name-plate'>
-                              <img id='nerd-emoji' src={intro} alt='nerd-emoji' />
+                              <img id='nerd-emoji' src={nerdemoji} alt='nerd-emoji' />
                               <span id='name'>DHAIRYA PATEL</span>
                         </div>
                   </div>
                   
                   {/* <img id='spider-man' src={spiderman} alt='spider-man'/> */}
+
+                  <footer>
+                        <div id='social-icons-container' >
+                              <img className='social-icons' src={gmail} alt='gmail'/>
+                              <img className='social-icons' src={medium} alt='medium'/>
+                              <img className='social-icons' src={github} alt='github'/>
+                              <img className='social-icons' src={facebook} alt='facebook'/>
+                              <img className='social-icons' src={twitter} alt='twitter'/>
+                              <img className='social-icons' src={linkedin} alt='linkedin'/>     
+                        </div>
+
+                        <div id='footer__content'>
+                              <span id='footer__text'> Thanks for visiting! Hope you have a great experience.</span>
+                              <img id='victory' src={victory} alt='victory' />
+                        </div>
+                        
+                  </footer>
                   
             </div>
       );
