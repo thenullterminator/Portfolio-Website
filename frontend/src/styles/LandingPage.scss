@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');       
 
+#container{
+      min-height: 100%;
+}
+#main{
+      overflow: auto;
+      padding-bottom:100px;
+}
 #background{
       height:100vh;
       background: linear-gradient(222.67deg, #FCF9AE 4.33%, #FDFAC2 42.85%, #FFFFFF 70.44%);
@@ -56,9 +63,34 @@
 
 #spider-man{
       width:36vw;
+      // height:85vh;
       position: absolute;
       top:-30px;
       right:0;
+}
+
+#bubble{
+      transform: rotate(3deg);
+      width:12vw;
+      position:absolute;
+      right:12vw;
+      top:2vw;
+}
+
+#bubble-text{
+      position: absolute;
+      top:5.7vw;
+      right:15vw;
+      font-family: Athiti;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.6vw;
+      line-height: 50px;
+      text-align: center;
+
+      color: #000000;
+
+      transform: rotate(2.47deg);
 }
 
 
@@ -101,7 +133,7 @@
       font-style: normal;
       font-weight: 500;
       font-size: 2.5vw;
-      line-height: 6vw;
+      line-height: 5.5vw;
       text-align: center;
 
       color: #FFFFFF;
@@ -120,7 +152,27 @@
       margin-left:6vw;
 }
 
+@media only screen and (max-width: 1700px) {
+      #spider-man{
+            width:40vw;
+      }
+      #bubble{
+            position: absolute;
+            right:15.5vw;
+      }
+
+      #bubble-text{
+            position: absolute;
+            top:5.3vw;
+            right:18.5vw;
+      }
+}
+
 @media only screen and (max-width: 1500px) {
+
+      #spider-man{
+            width:41vw;
+      }
 
       #know_more,#subtitle{
             font-size:3vw;
@@ -133,10 +185,17 @@
 
 }
 
+
+
 @media only screen and (max-width: 1200px) {
 
+      #spider-man{
+            width:43vw;
+            // height:70vh;
+      }
+
       #know_more,#subtitle{
-            font-size:3.3vw;
+            font-size:3.2vw;
       }
 
       #know_more{
@@ -144,10 +203,20 @@
             line-height: 7.4vw;
       }
 
+      #bubble-text{
+            position: absolute;
+            top:4.6vw;
+            right:18.3vw;
+      }
+
 }
 
 @media only screen and (max-width: 1000px) {
 
+      #spider-man{
+            width:45vw;
+            // height:70vh;
+      }
       #know_more,#subtitle{
             font-size:3.7vw;
       }
@@ -160,6 +229,10 @@
 }
 
 @media only screen and (max-width: 981px) {
+
+      #spider-man,#bubble,#bubble-text{
+            display: none;
+      }
       #main-content{
             margin-left:0;
             display: flex;
