@@ -1,6 +1,7 @@
 import React from 'react';
-import '../styles/LandingPage.scss';
+import '../styles/components/LandingPage.scss';
 
+import Sun from '../components/sun';
 import Footer from './footer';
 import nerdemoji from '../assets/nerd-emoji.png';
 import hello from '../assets/hello.png';
@@ -11,7 +12,7 @@ const LandingPage=()=>{
       return (
             <div id='background'>
 
-                  <div id='sun'></div>
+                  <Sun/>
 
                   <div id='container'>
 
@@ -44,9 +45,13 @@ const LandingPage=()=>{
 
                                           <button id='know_more'>Know More</button>
                                     </div>
+                                    
                               </div>
+
                         </div>
+
                   </div>
+
                   <Footer/>
                  
             </div>

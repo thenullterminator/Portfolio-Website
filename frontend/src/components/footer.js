@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/footer.scss';
+import '../styles/components/footer.scss';
 
 import gmail from '../assets/gmail.png';
 import medium from '../assets/medium.png';

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Athiti&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');       
+// fetching font families.
+@import url('https://fonts.googleapis.com/css?family=Athiti|Montserrat|Poppins&display=swap');
 
+// Wrapper Styles
 #container{
       min-height: 100%;
 }
@@ -9,24 +9,14 @@
       overflow: auto;
       padding-bottom:100px;
 }
+// Background styles.
 #background{
       height:100vh;
       background: linear-gradient(222.67deg, #FCF9AE 4.33%, #FDFAC2 42.85%, #FFFFFF 70.44%);
 }
 
-#sun{
-      width:22px;
-      height:22px;
-      border-radius:50%;
-      background: #F9BC61;
-      margin:20px;
-      position:absolute;
-      right:0;
-      top:0;
-}
-
+// Landing Page nav bar style.
 #navbar{
-      // background:red;
       display: flex;
       justify-content: space-between;
       width:89vw;
@@ -35,6 +25,7 @@
       top:3.35vw;
 }
 
+// name plate styles.
 #name{
       font-family: Athiti;
       font-style: normal;
@@ -56,14 +47,12 @@
 }
 
 #name-plate{
-      // background: blue;
       display: inline-block;
-      // margin:20px;
 }
 
+// spider man styles.
 #spider-man{
       width:36vw;
-      // height:85vh;
       position: absolute;
       top:-30px;
       right:0;
@@ -93,9 +82,8 @@
       transform: rotate(2.47deg);
 }
 
-
+// Main content styles.
 #title{
-      // background:red;
       display: inline;
 }
 
@@ -151,6 +139,8 @@
       margin-top:110px;
       margin-left:6vw;
 }
+
+// Media queries.
 
 @media only screen and (max-width: 1700px) {
       #spider-man{
