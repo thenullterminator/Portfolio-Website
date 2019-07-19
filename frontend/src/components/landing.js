@@ -12,7 +12,7 @@ const LandingPage=()=>{
       return (
             <div id='background'>
 
-                  <Sun/>
+                  <Sun />
 
                   <div id='container'>
 
@@ -45,14 +45,14 @@ const LandingPage=()=>{
 
                                           <button id='know_more'>Know More</button>
                                     </div>
-                                    
+
                               </div>
 
                         </div>
 
                   </div>
 
-                  <Footer/>
+                  <Footer />
                  
             </div>
       );
