@@ -1,0 +1,45 @@
+footer{
+      position: absolute;
+      width:100vw;
+      bottom:0;
+      // background:chocolate;
+      border: 1px solid #CFBEBE;
+      // height: 300px;
+}
+
+.social-icons{
+      width:18px;
+      margin:11px;
+}
+
+#social-icons-container{
+      // background:blue;
+      width: 240px;
+      margin: 0 auto;
+      margin-bottom: -10px;
+}
+
+#footer__text{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      letter-spacing: -0.2px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #837575;
+}
+
+#victory{
+      width:20px;
+      position: relative;
+      top:5px;
+}
+
+#footer__content{
+      width:332px;
+      margin:0 auto;
+      margin-bottom:25px;
+}

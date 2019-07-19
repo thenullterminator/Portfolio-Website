@@ -1,15 +1,11 @@
 import React from 'react';
 import '../styles/LandingPage.scss';
+
+import Footer from './footer';
 import nerdemoji from '../assets/nerd-emoji.png';
-// import victory from '../assets/victory.png';
-import victory from '../assets/lu2.png';
-// import spiderman from '../assets/spider-man.png';
-import gmail from '../assets/gmail.png';
-import medium from '../assets/medium.png';
-import github from '../assets/github.png';
-import facebook from '../assets/facebook.png';
-import twitter from '../assets/twitter.png';
-import linkedin from '../assets/linkedin.png';
+import hello from '../assets/hello.png';
+import spiderman from '../assets/spider-man.png';
+
 const LandingPage=()=>{
       return (
             <div id='background'>
@@ -24,22 +20,23 @@ const LandingPage=()=>{
                   
                   {/* <img id='spider-man' src={spiderman} alt='spider-man'/> */}
 
-                  <footer>
-                        <div id='social-icons-container' >
-                              <img className='social-icons' src={gmail} alt='gmail'/>
-                              <img className='social-icons' src={medium} alt='medium'/>
-                              <img className='social-icons' src={github} alt='github'/>
-                              <img className='social-icons' src={facebook} alt='facebook'/>
-                              <img className='social-icons' src={twitter} alt='twitter'/>
-                              <img className='social-icons' src={linkedin} alt='linkedin'/>     
+                  <div id='main-content'>
+                        <div id='title'>
+                              <img src={hello} id='hello' alt='hello'/>
+                              <span id='title__text'> Hola.</span>
                         </div>
 
-                        <div id='footer__content'>
-                              <span id='footer__text'> Thanks for visiting! Hope you have a great experience.</span>
-                              <img id='victory' src={victory} alt='victory' />
+                        <div id='subtitle'>
+                        I am <b><big>Web Developer</big></b>,<br/>
+                        a simple man and a caffeine dependent life form, interested primarily in full stack development, some music and food.
                         </div>
-                        
-                  </footer>
+
+                        <button id='know_more'>Know More</button>
+                  </div>
+
+                  <Footer/>
+
+                 
                   
             </div>
       );
