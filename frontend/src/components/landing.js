@@ -1,8 +1,9 @@
 import React from 'react';
 import '../styles/components/LandingPage.scss';
-
+// importing components.
 import Sun from '../components/sun';
 import Footer from './footer';
+// importing assets.
 import nerdemoji from '../assets/nerd-emoji.png';
 import hello from '../assets/hello.png';
 import spiderman from '../assets/spider-man.png';
@@ -10,7 +11,7 @@ import bubble from '../assets/bubble.png';
 
 const LandingPage=()=>{
       return (
-            <div id='background'>
+            <div>
 
                   <Sun />
 
@@ -24,11 +25,13 @@ const LandingPage=()=>{
                                     </div>
                               </div>
                                     
-                              <div>
-                                    <div id='image'>
-                                          <img id='bubble' src={bubble} alt='bubble'/>
+                              {/* <div> */}
+                                    <div>
+                                         
                                           <img id='spider-man' src={spiderman} alt='spider-man'/>
+                                          <img id='bubble' src={bubble} alt='bubble'/>
                                           <span id='bubble-text'>Me Too!!</span>
+                                          
                                     </div>
                                     
 
@@ -46,7 +49,7 @@ const LandingPage=()=>{
                                           <button id='know_more'>Know More</button>
                                     </div>
 
-                              </div>
+                              {/* </div> */}
 
                         </div>
 
