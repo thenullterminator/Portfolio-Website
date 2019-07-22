@@ -1,0 +1,133 @@
+// fetching font families.
+@import url('https://fonts.googleapis.com/css?family=Athiti|Montserrat|Poppins&display=swap');
+
+// Landing Page nav bar style.
+
+#desktop-navbar{
+      display: flex;
+      justify-content: space-between;
+      width:89vw;
+      margin: 0 auto;
+      margin-top:3.5vw;
+}
+
+#mobile-navbar{
+      display: none;
+}
+
+// name plate styles.
+.name{
+      font-family: Athiti;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23.7px;
+      line-height: 58px;
+      /* identical to box height */
+
+      color: #4E4242;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-decoration: none;
+      position: relative;
+      bottom:11px;
+      left:10px;
+}
+.nerd-emoji{
+      width:35px;
+      height:35px;
+}
+
+.name-plate{
+      display: inline-block;
+}
+
+.links{
+      
+      text-decoration: none;
+     
+      font-family: Athiti;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 39px;
+      /* identical to box height */
+      text-align: center;
+
+      color: #4E4242;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      position: relative;
+
+}
+
+#otherlinks{
+      width: 40vw;
+      display: flex;
+      justify-content:space-between;
+}
+
+// Media Queries.
+@media only screen and (max-width: 1500px) {
+
+      #desktop-navbar{
+            width:90vw;
+
+      }
+}
+
+@media only screen and (max-width: 1400px) {
+
+      #otherlinks{
+            width:46vw;
+
+      }
+}
+
+@media only screen and (max-width: 1200px) {
+
+      #desktop-navbar{
+            width:89vw; 
+      }
+      #otherlinks{
+            width:46vw;
+
+      }
+}
+
+@media only screen and (max-width: 1100px) {
+
+      #desktop-navbar{
+            width:85vw;
+      }
+}
+
+@media only screen and (max-width: 981px) {
+
+      #desktop-navbar{
+            display: none;
+      }
+      #mobile-navbar{
+            // background: green;
+            display:flex;
+            flex-direction: column;
+            width:89vw;
+            margin: 0 auto;
+            position: relative;
+            top:3.5vw;
+      }
+      #toggle{
+            cursor:pointer;
+      }
+      #other-mob-links{
+            // display: none;
+            display:flex;
+            flex-direction: column;
+            background:hsl(0, 43%, 99%);
+            border:1px solid rgb(228, 228, 228);
+            border-radius:10px;
+
+      }
+      .links{
+            line-height: 50px;
+      }
+}

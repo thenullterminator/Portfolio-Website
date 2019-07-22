@@ -11,7 +11,7 @@ import bubble from '../assets/bubble.png';
 
 const LandingPage=()=>{
       return (
-            <div>
+            <div id='landing-page'>
 
                   <Sun />
 
