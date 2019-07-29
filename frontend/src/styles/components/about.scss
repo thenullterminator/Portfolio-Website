@@ -1,0 +1,19 @@
+#about-page{
+
+      // fetching font families.
+      @import url('https://fonts.googleapis.com/css?family=Athiti|Montserrat|Poppins&display=swap');
+
+      #container{
+            min-height: 100vh;
+      }
+      #main{
+            overflow: auto;
+            padding-bottom:130px;
+            
+      }
+
+      #snap-effect{
+            background:red;
+            display:inline-block;
+      }
+}

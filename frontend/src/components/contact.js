@@ -10,10 +10,6 @@ import grinemoji from '../assets/grin.png';
 import emailicon from '../assets/email.png';
 class Contact extends React.Component{
 
-      state={
-            mobile:false
-      };
-
       render(){
             return (
                   <div id='contact-page'>

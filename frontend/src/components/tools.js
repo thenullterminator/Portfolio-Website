@@ -22,10 +22,7 @@ import cpp from '../assets/cpp.png';
 
 class Tools extends React.Component{
 
-      state={
-            mobile:false
-      };
-
+    
       render(){
             return (
                   <div id='tools-page'>
