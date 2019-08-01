@@ -4,8 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import myself from '../assets/myself.png';
-import { red } from "@material-ui/core/colors";
-
+import '../styles/components/card.scss'
 const styles = theme => ({
   actions: {
     display: "flex"
@@ -33,9 +32,9 @@ class RecipeReviewCard extends React.Component {
     const { classes } = this.props;
 
     return (
-      <Card  style={{height:'600px',background:'rgb(0,0,0,0)',boxShadow:'none',padding:'0px'}}  className={classes.card}>
+      <Card id='card'  style={{background:'rgb(0,0,0,0)',boxShadow:'none',padding:'0px'}}  className={classes.card}>
          <CardContent>
-            <img style={{width:'383px'}} src={myself} alt=''/>
+            <img id='snappedPhoto'  src={myself} alt=''/>
         </CardContent>
       </Card>
     );
